@@ -1,0 +1,233 @@
+.navigation{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+    background-color:transparent;
+}
+
+.navigation u l,
+li,
+a {
+    color: white;
+    text-decoration:none;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    transform-box: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul li {
+    font-size: 20px; 
+    transition: font-size 0.5s ease-in-out;  
+  }
+  
+  ul li:hover {
+    font-size: 35px;  
+  }
+  
+
+
+.navigation ul {
+    display: flex;
+    gap: 25px;
+}
+
+.logo{
+   
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/header_img.jpg ');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    
+      
+}
+
+.text-bas{
+    display: flex;
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 50%;  /* définit une largeur de 50% pour l'élément */
+    padding-left: 15rem;
+    margin-left:23rem ;
+}
+
+
+.center-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;  /* définit une largeur de 50% pour l'élément */
+    margin: 0 auto;  /* centre l'élément horizontalement */
+    margin-top: 100px;
+    padding-top: 2.5rem;
+    font-size: 5rem;
+    color: white;
+
+}
+
+.icon{
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.paragraph{
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    width: 50%;
+}
+
+
+.img-cv{
+    margin-top: 2.5rem;
+    margin-right: 3rem;
+    
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.propos {
+    padding-top: 4rem;
+    text-align: center;
+    border: 50% solid black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1.5;
+    
+}
+
+.a-propos{
+    background-color: #efeded;
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contain-skill{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.skill-section{
+    background-color: #f4e6e6;
+    padding: 20px;
+}
+
+.panel-clr{
+    background-color: #565656;
+    color: white;
+}
+
+.card .img-fit{
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+.card{
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.card-text{
+    flex-grow: 1;
+}
+
+@media (max-width: 767.98px){
+    .card .img-fit{
+        aspect-ratio: 1.45 1;
+    }
+}
+
+/*.tel {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+*/
+
+
+#span{
+    vertical-align: middle;
+}
+
+footer{
+    padding-top: 10vw;
+    background-color: #030303;
+}
+
+.contact{
+    padding-bottom: 10vw;
+    background-color: #f4e6e6;
+    
+    
+}
+
+#copy{
+    color: white;
+}
+
+#txt{
+    text-align: justify;
+}
+
+#img-width{
+    display: block;
+    margin: auto;
+    
+    width: 15rem;
+    height: 15rem;
+    
+}
+
+#portfolio_name{
+    font-size: 1.97rem;
+}
+
+
+.type-project{
+    text-transform: uppercase;
+    margin-top: 7%;
+    text-align: center;
+
+}
+/*
+.container-project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+*/
