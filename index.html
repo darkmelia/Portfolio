@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta >
-    <link rel="stylesheet" href="styles/index.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet'>
-    <link rel="icon" type="image/png²" href="./images/suitcase.png">
 
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <title>Portfolio</title>
 </head>
@@ -47,331 +46,282 @@
 
 
 
-<div class="portfolio">
-  <p><strong class="center-text">Mon Portfolio </strong></p><br/>
-  <p><strong class="text-bas">Développeur Backend </strong></p>
-</div> 
-
-
+  <div class="portfolio">
+    <p><strong class="center-text">Mon Portfolio </strong></p><br/>
+    <p class="d-none d-sm-block"><strong class="text-bas">Développeur Backend </strong></p>
+  </div> 
 </header>
 
 
-<section class="a-propos">
-  <div data-aos="fade-up"  data-aos-duration="1250">
-    <div class="col-xs-12 ">
-      <h2 id="apropos" class="propos">A PROPOS</h2>
-      <hr class="small">
-      </div>
-      </div>
-
-    <div class="container preview-highlighter aos-init aos-animate" data-aos="fade'up">
-      <div class="row ">
-        <div class="col-2">
-
+<section class="p-5 text-center" style="background-color: #efeded;">
+  <h1>A PROPOS</h1>
+  <div class="row mt-5 mb-5">
+    <div class="card border border-0 m-auto" style="background-color: #efeded; max-width: 850px">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="./assets/images/profil.jpg" class="rounded img-fluid" alt="...">
         </div>
-          <div class="col-4 col-xs-12">
-            <p>Bonjour, je m'appelle Grégoire Legrand et j'ai 19 ans. Je suis actuellement en deuxième année de BUT informatique à l'IUT de Lens.</p>
-            <br>
-            <br>
-            <p>Mon objectif est de devenir développeur web et j'ai hâte de me lancer dans cette carrière passionnante. J'aime apprendre de nouvelles technologies. Je suis capable de travailler efficacement en équipe.</p>
-            <br/>
-            <br>
-            <p>Je suis impatient de développer mes compétences en tant que développeur web et de créer des choses qui seront utilisées par des millions de personnes à travers le monde.</p><br/>
-            <br>
-
+        <div class="col-md-8">
+          <div class="card-body">
+            <p class="text-start fs-5">Bonjour, je m'appelle Grégoire Legrand et j'ai 19 ans. Je suis actuellement en deuxième année de BUT informatique à l'IUT de Lens.</p>
+            <p class="text-start fs-5">Mon objectif est de devenir développeur web et j'ai hâte de me lancer dans cette carrière passionnante. J'aime apprendre de nouvelles technologies. Je suis capable de travailler efficacement en équipe.</p>
+            <p class="text-start fs-5">Je suis impatient de développer mes compétences en tant que développeur web et de créer des choses qui seront utilisées par des millions de personnes à travers le monde.</p>
           </div>
-        <div class="col-6 col-xs-12">
-          <img src="./images/profil_pic.jpg" alt="photo de moi-même" width="250px">
         </div>
-
+      </div>
     </div>
   </div>
-
 </section>
 
-<section id="skill" class="skill-section">
-<div data-aos="fade-up" data-aos-duration="1250" data-aos-easing="ease-in-sine">
-  <div class="col-xs-12 ">
-    <h2 class="propos">COMPÉTENCES</h2>
-    <hr class="small">
-  </div>
-</div>
-
-
-<div data-aos="fade-up" data-aos-duration="1250" data-aos-easing="ease-in-sine">
-<div class="container">
-
-  <div class="row row-cols-1 row-cols-md-2 g-4 mt-3 mb-3">
-    <div class="col-lg-4 col-md-4 col-xs-12">
-      <div class="card">
-        <img id="img-width" src="./images/logo/laravel icon.jpg" class="card-img-top img-fit" alt="...">
+<section class="p-5 text-center" style="background-color: #f4e6e6;">
+  <h1>COMPÉTENCES</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/laravel.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
         <div class="card-body">
           <h5 class="card-title">Laravel</h5>
-          <p id="txt" class="card-text">Laravel est un framework de développement web complet et facile à utiliser qui permet de créer rapidement des applications Web de qualité. C'est pour ces raisons que ce framework est le meilleur que je puisse utiliser aujoud'hui.</p>
+          <p class="card-text text-start">Laravel est un framework de développement web complet et facile à utiliser qui permet de créer rapidement des applications Web de qualité. C'est pour ces raisons que ce framework est le meilleur que je puisse utiliser aujoud'hui.</p>
         </div>
-      </div>    
+      </div>
     </div>
-
-    <div class="col-lg-4 col-md-4 col-xs-12">
-      <div class="card">
-        <img id="img-width" src="./images/logo/html.jpg" class="card-img-top img-fit" alt="...">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/html.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
         <div class="card-body">
           <h5 class="card-title">HTML</h5>
-          <p id="txt" class="card-text">HTML est un langage de balisage incontournable car c'est le langage de base pour le développement Web, c'est facile à apprendre et c'est un langage ouvert et standardisé.</p>
+          <p class="card-text text-start">HTML est un langage de balisage incontournable car c'est le langage de base pour le développement Web, c'est facile à apprendre et c'est un langage ouvert et standardisé.</p>
         </div>
-      </div>    
+      </div>
     </div>
-
-    <div class="col-lg-4 col-md-4 col-xs-12">
-      <div class="card">
-        <img id="img-width" src="./images/logo/css logo.jpg" class="card-img-top img-fit" alt="...">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/css.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
         <div class="card-body">
           <h5 class="card-title">CSS</h5>
-          <p id="txt" class="card-text">Le CSS est langage de style pour tous les développeurs Web, il offre une grande flexibilité et facilite le developpement et la maintenance de sites Web de qualité.</p>
+          <p class="card-text text-start">Le CSS est langage de style pour tous les développeurs Web, il offre une grande flexibilité et facilite le developpement et la maintenance de sites Web de qualité.</p>
         </div>
-      </div>    
+      </div>
     </div>
-
-    <div class="col-lg-4 col-md-4 col-xs-12">
-      <div class="card">
-        <img id="img-width" src="./images/logo/bootstrap.jpg" class="card-img-top img-fit" alt="...">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/boostrap.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Bootstrap</h5>
-          <p id="txt" class="card-text">Bootstrap est un framework de développement Web qui permet de créer des sites Web de manière rapide et facile. Il inclut un grand nombre de modèles de base et de composants prédéfinis qui aide à créer une interface utilisateur attrayante et cohérente sans avoir à partir de zéro.</p>
+          <h5 class="card-title">BOOSTRAP</h5>
+          <p class="card-text text-start">Bootstrap est un framework de développement Web qui permet de créer des sites Web de manière rapide et facile. Il inclut un grand nombre de modèles de base et de composants prédéfinis qui aide à créer une interface utilisateur attrayante et cohérente sans avoir à partir de zéro.</p>
         </div>
-      </div>    
+      </div>
     </div>
-
-    <div class="col-lg-4 col-md-4 col-xs-12">
-      <div class="card">
-        <img id="img-width" src="./images/logo/Javascript_Logo.jpg" class="card-img-top img-fit" alt="...">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/js.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Javascript</h5>
-          <p id="txt" class="card-text">JavaScript est un langage de programmation populaire utilisé pour créer des fonctionnalités interactives sur les sites Web. Il est souvent utilisé en conjonction avec HTML et CSS pour créer des pages Web dynamiques et réactives, ce qui en fait un choix polyvalent pour les développeurs.</p>
+          <h5 class="card-title">JAVASCRIPT</h5>
+          <p class="card-text text-start">JavaScript est un langage de programmation populaire utilisé pour créer des fonctionnalités interactives sur les sites Web. Il est souvent utilisé en conjonction avec HTML et CSS pour créer des pages Web dynamiques et réactives, ce qui en fait un choix polyvalent pour les développeurs.</p>
         </div>
-      </div>    
+      </div>
     </div>
-
-    <div class="col-lg-4 col-md-4 col-xs-12">
-      <div class="card">
-        <img id="img-width" src="./images/logo/Java-Logo.jpg" class="card-img-top img-fit" alt="...">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/images/logos/java.png" class="card-img-top m-auto mt-3" style="max-width: 200px" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Java</h5>
-          <p id="txt" class="card-text">Java est un langage de programmation populaire. Il est très polyvalent, ce qui signifie qu'il peut être utilisé pour développer une grande variété d'applications, que ce soit pour le web, les appareils mobiles ou les ordinateurs de bureau</p>
+          <h5 class="card-title">JAVA</h5>
+          <p class="card-text text-start">Java est un langage de programmation populaire. Il est très polyvalent, ce qui signifie qu'il peut être utilisé pour développer une grande variété d'applications, que ce soit pour le web, les appareils mobiles ou les ordinateurs de bureau</p>
         </div>
-      </div>    
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-
-
-</section>
-
-<section class="a-propos">
-  <div data-aos="fade-up"  data-aos-duration="1250">
-    <div class="col-xs-12">
-      <h2 id="projet" class="propos">MES PROJETS</h2>
-      <hr class="small">
-      </div>
-  </div>
-  <div class="container preview-highlighter aos-init aos-animate" data-aos="fade'up">
-    <div class="col-xs-12">
-      <h4 class="type-project">projets réalisés pour les études</h4>
-      <hr class="small">
-    </div>
-
-    <div class="container-project">
-      <div class="name-project">
-        <h5>projet Fractales (Java)</h5>
-      </div>
-      <div class="description-project">
-        <p>Pour ce projet de groupe, le but est de realiser des images complexes a l'aide d'algorithme créant une image infini.</p>
-      </div>
-    </div>
-    <div class="container-project">
-      <div class="name-project">
-        <h5>projet Space Invader (Java)</h5>
-      </div>
-      <div class="description-project">
-        <p>Dans ce projet effectué en groupe, nous avons recréer le jeu du space invader </p>
-      </div>
-    </div>
-    <div class="container-project">
-      <div class="name-project">
-        <h5>projet Pokémon (Laravel)</h5>
-      </div>
-      <div class="description-project">
-        <p>Ce projet a était fait afin de voir et comprendre les bases du framework laravel</p>
-      </div>
-    </div>
-    <div class="col-xs-12">
-      <h4 class="type-project">projets personnel réalisés</h4>
-      <hr class="small">
-    </div>
-    <div class="container-project">
-      <div class="name-project">
-        <h5>projet angular (Angular)</h5>
-      </div>
-      <div class="description-project">
-          <p> Ce projet fait avec la doc Angular a pour but d'apprendre les bases du framework</p>
-      </div>
-    </div>
-    <div class="container-project">
-      <div class="name-project">
-        <h5>projet site de gateaux (Laravel)</h5>
-      </div>
-      <div class="description-project">
-          <p> Ce projet est la création d'un site de gateaux ou toutes les recettes patissières connus y seront notés. (Ce projet est toujours en cours.)</p>
-      </div>
-    </div>
-    <div class="container-project">
-      <div class="name-project">
-        <h5>projet Gelkrem (Laravel)</h5>
-      </div>
-      <div class="description-project">
-        <p>Le but de ce projet est de proposer une refonte du site Gelkrem avec plusieurs fonctionnalités en plus. (Ce projet est encore en cours.)</p>
       </div>
     </div>
   </div>
-  
 </div>
 </section>
 
-
-
-
-
-
-<section class="skill-section">
-  <div data-aos="fade-up"  data-aos-duration="1250">
-    <div class="col-xs-12">
-      <h2 id="exp" class="propos">Expérience</h2>
-      <hr class="small">
-      </div>
-  </div>
-  <div class="container preview-highlighter aos-init aos-animate" data-aos="fade'up">
-
-        <div class="row ">
-          <div class="col-2"></div>
-            <div class="col-4">
-        <h4>Manutentionnaire</h4><p>
-        Gelkrem, Loison-sous-Lens, France
-    </p><br/>
-    <p>Le travail à la chaîne de glace consiste à travailler sur une chaîne de production de glace.</p><br/>
-    <p>Vous pouvez être chargé de surveiller et de contrôler le fonctionnement de la machine, de vérifier la qualité de la glace produite,
-      de charger et de décharger les matières premières, de nettoyer et d'entretenir la machine, et de respecter les règles de sécurité alimentaire.</p>
-            </div>
-            <div class="col-6">
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Conditions
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Le travail à la chaîne de glace peut être physique et exiger de rester debout pendant de longues périodes.
-                      Il peut également être nécessaire de travailler en horaires décalés et les week-ends, en fonction de l'entreprise pour laquelle vous travaillez.</p><br/>
-                    <p>La capacité à travailler en équipe et à respecter les consignes de sécurité est également importante.</p></div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      bénéfices
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse " aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><p>J'ai appris à être rigoureux et à dépasser mes limites grâce aux conditions de travail exigeantes de ce métier.</p><br/>
-                      <p>J'ai également développé des compétences en matière de concentration et de travail sous pression, ce qui m'a été utile dans d'autres aspects de ma vie.</p>
-                    </div>
-                  </div>
-                </div>
-                </div>
-            </div>
+<section class="p-5 text-center" style="background-color: #efeded;">
+  <h1>MES PROJETS</h1>
+  <div class="row m-auto" style="max-width: 900px">
+    <h3 class="mt-5 text-start">Projets réalisés pour les études</h3>
+    <div class="accordion mt-3">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <strong>Projet Fractales <span class="badge bg-danger ms-2">JAVA</span></strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start">
+            Pour ce projet de groupe, le but est de realiser des images complexes a l'aide d'algorithme créant une image infini.
           </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <strong>Projet Space Invader <span class="badge bg-danger ms-2">JAVA</span></strong>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start">
+            Dans ce projet effectué en groupe, nous avons recréer le jeu du space invader
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <strong>Projet Pokémon <span class="badge bg-primary ms-2">LARAVEL</span></strong>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start">
+            Ce projet a était fait afin de voir et comprendre les bases du framework laravel
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
+  <div class="row m-auto mb-5" style="max-width: 900px">
+    <h3 class="mt-5 pt-4 text-start">Projets personnel</h3>
+    <div class="accordion mt-3">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <strong>Projet angular <span class="badge bg-warning ms-2">ANGULAR</span></strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start">
+            Ce projet fait avec la doc Angular a pour but d'apprendre les bases du framework
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <strong>Projet site de gateaux <span class="badge bg-primary ms-2">LARAVEL</span></strong>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start">
+            Ce projet est la création d'un site de gateaux ou toutes les recettes patissières connus y seront notés. (Ce projet est toujours en cours.)
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <strong>Projet Gelkrem <span class="badge bg-primary ms-2">LARAVEL</span></strong>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-start">
+            Le but de ce projet est de proposer une refonte du site Gelkrem avec plusieurs fonctionnalités en plus. (Ce projet est encore en cours.)
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
 </section>
 
-
-<div class="contact">
-<section id="contact"class="a-propos">
-  <div data-aos="fade-up"  data-aos-duration="1250">
-    <div class="col-xs-12">
-      <h2 id="exp" class="propos">Contact</h2>
-      <hr class="small">
+<section class="p-5 text-center" style="background-color: #f4e6e6;">
+  <h1 class="text-uppercase">Expérience</h1>
+  <div class="card m-auto mt-5 border border-0" style="max-width: 1200px; background-color: #f4e6e6;">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div class="card-body text-start">
+          <h4>Manutentionnaire</h4>
+          <p>
+            Gelkrem, Loison-sous-Lens, France
+          </p>
+          <p>Le travail à la chaîne de glace consiste à travailler sur une chaîne de production de glace.</p>
+          <p>
+            Vous pouvez être chargé de surveiller et de contrôler le fonctionnement de la machine, de vérifier la qualité de la glace produite,de charger et de décharger les matières premières, de nettoyer et d'entretenir la machine, et de respecter les règles de sécurité alimentaire.
+          </p>  
+        </div>
       </div>
-  </div>
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-3 col-sm-3"></div>
-      <div class="col-4 col-sm-4">
-        <p class="tel"><span id="span" class="material-symbols-outlined">
-    call
-    </span> 06-13-07-57-35</p>
-    <p><span id="span" class="material-symbols-outlined">
-      mail
-      </span>contact@gregoire-legrand.fr</p>
+      <div class="col-md-6">
+        <div class="card-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Conditions
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-start">
+                  <p>Le travail à la chaîne de glace peut être physique et exiger de rester debout pendant de longues périodes. Il peut également être nécessaire de travailler en horaires décalés et les week-ends, en fonction de l'entreprise pour laquelle vous travaillez.</p>
+                  <p>La capacité à travailler en équipe et à respecter les consignes de sécurité est également importante.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Bénéfices
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse " aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-start">
+                  <p>J'ai appris à être rigoureux et à dépasser mes limites grâce aux conditions de travail exigeantes de ce métier.</p>
+                  <p>J'ai également développé des compétences en matière de concentration et de travail sous pression, ce qui m'a été utile dans d'autres aspects de ma vie.</p>
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div>
       </div>
-      <div class="icon">
-        
-        <a href="https://gitlab.com/gregouse" class="icon-gitlab"><img src="./images/gitlab.jpg" width="25px" alt=""> </a> 
-
-        <a href="https://github.com/gregoire-legrand" class="icon-github"><img src="./images/github.jpg" width="25px"></a>
-    
-    <!-- utilise l'icône LinkedIn -->
-        <a href="https://www.linkedin.com/in/gregoire-legrand/" class="icon-linkedin"><img src="./images/linkedin_logo.jpg" width="25px" alt=""></a>
-    </div>
     </div>
   </div>
+</section>
 
+<section class="p-5 text-center" style="background-color: #efeded;">
+  <h1>CONTACT</h1>
+  <div class="mt-5 mb-5">
+    <p>
+      <span id="span" class="material-symbols-outlined">call</span>
+      06.13.07.57.35
+    </p>
+    <p>
+      <span id="span" class="material-symbols-outlined">mail</span>
+      <a href="mailto:contact@gregoire-legrand.fr">contact@gregoire-legrand.fr</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#apropos">À propos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#skill">Compétences</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#projet">projets</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#exp">Expérience</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#contact">Contact</a>
+    </li>
+  </ul>
   
-    </div>
-
-  <footer>
-
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link text-light" aria-current="page" href="#">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-light" href="#apropos">À propos</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-light" href="#skill">Compétences</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-light" href="#projet">projets</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-light" href="#exp">Expérience</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-light" href="#contact">Contact</a>
-  </li>
-</ul>
-
-    <li><a href="./images/CV Gregoire Legrand stage B web.pdf" target="_blank" class="text-light">Télécharger mon CV</a></li>
-    <li><a href="./images/Gregoire Legrand CV english.pdf" target="_blank" class="text-light">Télécharger mon CV en anglais</a></li>
+      <li><a href="./assets/documents/cv_fr.pdf" target="_blank" class="text-light">Télécharger mon CV</a></li>
+      <li><a href="./assets/documents/cv_en.pdf" target="_blank" class="text-light">Télécharger mon CV en anglais</a></li>
+  
+  
+  
+  <p id="copy" class="text-center">Copyright © 2023 All rights reserved - Grégoire Legrand</p>
+  
+    </footer>
 
 
 
-<p id="copy" class="text-center">Copyright © 2023 All rights reserved - Grégoire Legrand</p>
-
-  </footer>
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
