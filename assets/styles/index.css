@@ -1,7 +1,7 @@
 .navigation ul,
 li{
     color: white;
-    text-decoration:none;
+    text-decoration: none;
     list-style: none;
     text-transform: uppercase;
     font-size: 20px;
@@ -20,10 +20,10 @@ ul li {
   }
   
 
-  .card-img-top {
-    width: 150px; /* Tu peux ajuster cette largeur selon tes préférences */
-    height: 150px; /* Idem pour la hauteur */
-    object-fit: contain; /* Pour que les images gardent leurs proportions sans être déformées */
+.card-img-top {
+    width: 150px; 
+    height: 150px; 
+    object-fit: contain;
   }
 
 .navigation ul {
@@ -35,7 +35,7 @@ header{
     margin: 0;
     padding: 0;
     background-image: url('../images/header.jpg ');
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;   
